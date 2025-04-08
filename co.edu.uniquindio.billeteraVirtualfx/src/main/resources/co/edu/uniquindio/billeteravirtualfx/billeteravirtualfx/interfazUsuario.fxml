@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.billeteravirtualfx.billeteravirtualfx.viewController.UsuarioViewController">
+   <children>
+      <SplitPane layoutX="39.0" layoutY="16.0" orientation="VERTICAL" prefHeight="368.0" prefWidth="523.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="166.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" textAlignment="CENTER" wrappingWidth="205.474609375">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar dinero:" />
+                  <Text layoutX="84.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retirar:" wrappingWidth="79.4609375" />
+                  <TextField fx:id="txtUsuario" layoutX="186.0" layoutY="140.0" />
+                  <TextField fx:id="TxtContrasena" layoutX="186.0" layoutY="183.0" />
+                  <Button fx:id="btnConfirmar" layoutX="335.0" layoutY="301.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Modificacion del usuario" />
+                  <Text layoutX="84.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transferir:" wrappingWidth="79.4609375" />
+                  <TextField fx:id="TxtContrasena1" layoutX="186.0" layoutY="222.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

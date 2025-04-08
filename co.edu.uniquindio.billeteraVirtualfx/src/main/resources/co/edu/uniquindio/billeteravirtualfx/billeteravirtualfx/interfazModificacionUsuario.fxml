@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.billeteravirtualfx.billeteravirtualfx.viewController.ModificacionUsuarioViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="598.0">
+         <children>
+            <Text layoutX="207.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalles del usuario" textAlignment="CENTER" wrappingWidth="160.751953125" />
+            <Text layoutX="94.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+            <Text layoutX="98.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo:" />
+            <Text layoutX="98.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de télefono:" />
+            <TextField fx:id="txtNombre" layoutX="232.0" layoutY="66.0" />
+            <TextField fx:id="txtCorreo" layoutX="232.0" layoutY="105.0" />
+            <TextField fx:id="txtNumeroTelefono" layoutX="232.0" layoutY="145.0" />
+            <Button layoutX="452.0" layoutY="145.0" mnemonicParsing="false" text="Confirmar cambios" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="tcbNombre" layoutX="99.0" layoutY="-2.0" prefHeight="200.0" prefWidth="287.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Nombre" />
+                <TableColumn fx:id="tcbCorreo" prefWidth="75.0" text="Correo" />
+                  <TableColumn fx:id="tcbNumeroTelefono" prefWidth="135.0" text="Número de telefono" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
